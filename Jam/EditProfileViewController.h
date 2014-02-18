@@ -1,20 +1,24 @@
 //
 //  EditProfileViewController.h
-//  Hive
+//  Jam
 //
-//  Created by Diego Calvo on 2/17/14.
+//  Created by Diego Calvo on 2/15/14.
 //  Copyright (c) 2014 Diego Calvo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "ProfileViewController.h"
-#import "EditProfileViewController.h"
-#import "AnswerViewController.h"
-#import "AskViewController.h"
-#import "LoginViewController.h"
-#import "SignUpViewController.h"
 
 @interface EditProfileViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *fullNameField;
+@property (weak, nonatomic) IBOutlet UITextField *userNameField;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *companyField;
+@property (weak, nonatomic) IBOutlet UITextField *currentTitleField;
+@property (weak, nonatomic) IBOutlet UITextView *previousTitles;
+
+- (IBAction)save:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 @end

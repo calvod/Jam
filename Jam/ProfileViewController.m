@@ -50,7 +50,7 @@
 }
 
 -(IBAction)edit:(id)sender {
-    //[self.navigationController pushViewController:[[EditProfileViewController alloc] init] animated:YES];
+    [self performSegueWithIdentifier:@"editViewFromProfileView" sender:self];
 }
 
 -(IBAction)logout:(id)sender {
