@@ -28,8 +28,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //if can't find a current user:
-    //[self.navigationController pushViewController:[[LogInViewController alloc] init] animated:YES];
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        // nothing
+    } else {
+        [self performSegueWithIdentifier:@"logInFromProfileView" sender:self];
+    }
+    
+    self.name.text = [currentUser objectForKey:@"fullname"];
+    self.userName.text = [currentUser objectForKey:@"username"];
+    self.company.text = [currentUser objectForKey:@"company"];
+    self.currentTitle.text = [currentUser objectForKey:@"currenttitle"];
+    //self.previousTitles.text = [currentUser objectForKey:@"fullname"];
     
 }
 
@@ -44,8 +54,7 @@
 }
 
 -(IBAction)logout:(id)sender {
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"log out" message:[NSString stringWithFormat:@"are you sure?"] delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:@"log out", nil];
-//    [alert show];
+
     UIAlertView *alert = [[UIAlertView alloc] init];
     [alert setTitle:@"log out"];
     [alert setMessage:@"are you sure?"];
@@ -54,16 +63,16 @@
     [alert addButtonWithTitle:@"cancel"];
     [alert addButtonWithTitle:@"log out"];
     [alert show];
-    //if they hit cancel, cancel it,
-    //if they hit log:
-    //[self.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    //if they hit "log out" from the alert
  if (buttonIndex == 1)
     {
-         [self performSegueWithIdentifier:@"logInFromProfileView" sender:self];
+        [PFUser logOut];
+        PFUser *currentUser = [PFUser currentUser]; //this will now be nil
+        [self performSegueWithIdentifier:@"logInFromProfileView" sender:self];
     }
 }
 

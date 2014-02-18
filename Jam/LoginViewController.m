@@ -49,7 +49,7 @@
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry" message:[error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alertView show];
             } else {
-                [self.navigationController popToRootViewControllerAnimated:YES];
+                [self performSegueWithIdentifier:@"profileViewFromLogIn" sender:self];
             }
             
         }];

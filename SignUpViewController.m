@@ -60,7 +60,7 @@
                 // Hooray! Let them use the app now.
                 [self performSegueWithIdentifier:@"profileViewFromSignUp" sender:self];
             } else {
-                NSString *errorString = [error userInfo][@"error"];
+                //NSString *errorString = [error userInfo][@"error"];
                 // Show the errorString somewhere and let the user try again.
                 NSLog(@"Error while signing up");
             }
