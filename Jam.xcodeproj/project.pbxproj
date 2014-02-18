@@ -34,6 +34,7 @@
 		F171692418B30EBB009ED414 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F171692318B30EBB009ED414 /* LoginViewController.m */; };
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
+		F1A302F418B315610040363E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A302F318B315610040363E /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		F171692318B30EBB009ED414 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F171692618B30F34009ED414 /* logInButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logInButton.png; path = "../../Hive-old/Hive/logInButton.png"; sourceTree = "<group>"; };
 		F171692818B30F3D009ED414 /* signUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signUpButton.png; path = "../../Hive-old/Hive/signUpButton.png"; sourceTree = "<group>"; };
+		F1A302F218B315610040363E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = ../SignUpViewController.h; sourceTree = "<group>"; };
+		F1A302F318B315610040363E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = ../SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				F127DFB318B30973005728D7 /* ProfileViewController.m */,
 				F171692218B30EBB009ED414 /* LoginViewController.h */,
 				F171692318B30EBB009ED414 /* LoginViewController.m */,
+				F1A302F218B315610040363E /* SignUpViewController.h */,
+				F1A302F318B315610040363E /* SignUpViewController.m */,
 				F127DFB518B30973005728D7 /* Images.xcassets */,
 				F127DFA418B30973005728D7 /* Supporting Files */,
 			);
@@ -311,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F171692418B30EBB009ED414 /* LoginViewController.m in Sources */,
+				F1A302F418B315610040363E /* SignUpViewController.m in Sources */,
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,
 				F127DFAA18B30973005728D7 /* main.m in Sources */,

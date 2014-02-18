@@ -57,7 +57,7 @@
 }
 
 - (IBAction)signup:(id)sender {
-    //[self.navigationController pushViewController:[[SignUpViewController alloc] init] animated:YES];
+    [self performSegueWithIdentifier:@"signUpFromLogin" sender:self];
 }
 
 @end
