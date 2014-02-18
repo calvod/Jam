@@ -71,17 +71,17 @@
  if (buttonIndex == 1)
     {
         [PFUser logOut];
-        PFUser *currentUser = [PFUser currentUser]; //this will now be nil
+        //PFUser *currentUser = [PFUser currentUser]; //this will now be nil
         [self performSegueWithIdentifier:@"logInFromProfileView" sender:self];
     }
 }
 
 -(IBAction)answer:(id)sender {
-    //[self.navigationController pushViewController:[[AnswerViewController alloc] init] animated:YES];
+   
 }
 
 -(IBAction)ask:(id)sender {
-    //[self.navigationController pushViewController:[[AskViewController alloc] init] animated:YES];
+     [self performSegueWithIdentifier:@"askViewFromProfileView" sender:self];
 }
 
 

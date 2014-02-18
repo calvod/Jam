@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F12222AE18B3C83500403539 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222AD18B3C83500403539 /* SignUpViewController.m */; };
 		F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222B118B3C8F300403539 /* EditProfileViewController.m */; };
+		F12222B518B4215D00403539 /* AskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222B418B4215D00403539 /* AskViewController.m */; };
 		F127DF9E18B30973005728D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DF9D18B30973005728D7 /* Foundation.framework */; };
 		F127DFA018B30973005728D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DF9F18B30973005728D7 /* CoreGraphics.framework */; };
 		F127DFA218B30973005728D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFA118B30973005728D7 /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 		F12222AF18B3C83F00403539 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		F12222B018B3C8F300403539 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		F12222B118B3C8F300403539 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		F12222B318B4215D00403539 /* AskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskViewController.h; sourceTree = "<group>"; };
+		F12222B418B4215D00403539 /* AskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskViewController.m; sourceTree = "<group>"; };
 		F127DF9A18B30973005728D7 /* Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F127DF9D18B30973005728D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F127DF9F18B30973005728D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 				F171692318B30EBB009ED414 /* LoginViewController.m */,
 				F12222AF18B3C83F00403539 /* SignUpViewController.h */,
 				F12222AD18B3C83500403539 /* SignUpViewController.m */,
+				F12222B318B4215D00403539 /* AskViewController.h */,
+				F12222B418B4215D00403539 /* AskViewController.m */,
 				F127DFB518B30973005728D7 /* Images.xcassets */,
 				F127DFA418B30973005728D7 /* Supporting Files */,
 			);
@@ -322,6 +327,7 @@
 			files = (
 				F171692418B30EBB009ED414 /* LoginViewController.m in Sources */,
 				F12222AE18B3C83500403539 /* SignUpViewController.m in Sources */,
+				F12222B518B4215D00403539 /* AskViewController.m in Sources */,
 				F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */,
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,
