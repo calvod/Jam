@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12222AE18B3C83500403539 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222AD18B3C83500403539 /* SignUpViewController.m */; };
+		F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222B118B3C8F300403539 /* EditProfileViewController.m */; };
 		F127DF9E18B30973005728D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DF9D18B30973005728D7 /* Foundation.framework */; };
 		F127DFA018B30973005728D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DF9F18B30973005728D7 /* CoreGraphics.framework */; };
 		F127DFA218B30973005728D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFA118B30973005728D7 /* UIKit.framework */; };
@@ -34,7 +36,6 @@
 		F171692418B30EBB009ED414 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F171692318B30EBB009ED414 /* LoginViewController.m */; };
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
-		F1A302F418B315610040363E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A302F318B315610040363E /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F12222AD18B3C83500403539 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		F12222AF18B3C83F00403539 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		F12222B018B3C8F300403539 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		F12222B118B3C8F300403539 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
 		F127DF9A18B30973005728D7 /* Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F127DF9D18B30973005728D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F127DF9F18B30973005728D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,8 +86,6 @@
 		F171692318B30EBB009ED414 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F171692618B30F34009ED414 /* logInButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logInButton.png; path = "../../Hive-old/Hive/logInButton.png"; sourceTree = "<group>"; };
 		F171692818B30F3D009ED414 /* signUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signUpButton.png; path = "../../Hive-old/Hive/signUpButton.png"; sourceTree = "<group>"; };
-		F1A302F218B315610040363E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = ../SignUpViewController.h; sourceTree = "<group>"; };
-		F1A302F318B315610040363E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = ../SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,12 +169,14 @@
 				F127DFAC18B30973005728D7 /* AppDelegate.h */,
 				F127DFAD18B30973005728D7 /* AppDelegate.m */,
 				F127DFAF18B30973005728D7 /* Main.storyboard */,
+				F12222B018B3C8F300403539 /* EditProfileViewController.h */,
+				F12222B118B3C8F300403539 /* EditProfileViewController.m */,
 				F127DFB218B30973005728D7 /* ProfileViewController.h */,
 				F127DFB318B30973005728D7 /* ProfileViewController.m */,
 				F171692218B30EBB009ED414 /* LoginViewController.h */,
 				F171692318B30EBB009ED414 /* LoginViewController.m */,
-				F1A302F218B315610040363E /* SignUpViewController.h */,
-				F1A302F318B315610040363E /* SignUpViewController.m */,
+				F12222AF18B3C83F00403539 /* SignUpViewController.h */,
+				F12222AD18B3C83500403539 /* SignUpViewController.m */,
 				F127DFB518B30973005728D7 /* Images.xcassets */,
 				F127DFA418B30973005728D7 /* Supporting Files */,
 			);
@@ -316,7 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F171692418B30EBB009ED414 /* LoginViewController.m in Sources */,
-				F1A302F418B315610040363E /* SignUpViewController.m in Sources */,
+				F12222AE18B3C83500403539 /* SignUpViewController.m in Sources */,
+				F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */,
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,
 				F127DFAA18B30973005728D7 /* main.m in Sources */,
