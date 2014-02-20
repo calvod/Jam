@@ -42,8 +42,10 @@
     NSString *email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *company = [self.companyField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *currenttitle = [self.currentTitleField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *previoustitle = [self.previousTitleField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
     
-    if ([fullname length] == 0 || [username length] == 0 || [password length] == 0 || [email length] == 0 || [company length] == 0 || [currenttitle length] == 0) {
+    if ([fullname length] == 0 || [username length] == 0 || [password length] == 0 || [email length] == 0 || [company length] == 0 || [currenttitle length] == 0 || [previoustitle length] == 0) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"oops" message:@"make sure you enter all fields" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alertView show];
     } else {
@@ -54,6 +56,7 @@
         [newUser setObject:email forKey:@"email"];
         [newUser setObject:company forKey:@"company"];
         [newUser setObject:currenttitle forKey:@"currenttitle"];
+        [newUser setObject:previoustitle forKey:@"previoustitle"];
         
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {

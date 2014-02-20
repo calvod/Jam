@@ -42,14 +42,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zl3-pz-Yjp">
-                                <rect key="frame" x="40" y="305" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zuo-wW-lcM">
                                 <rect key="frame" x="40" y="39" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,6 +98,13 @@
                                     <action selector="ask:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9ko-Na-3OZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="previous title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-hr-ltY">
+                                <rect key="frame" x="20" y="305" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -113,7 +112,7 @@
                         <outlet property="company" destination="vaW-Xk-UGU" id="Ujb-aY-TAy"/>
                         <outlet property="currentTitle" destination="Xdh-rA-iWb" id="aXZ-jK-5xa"/>
                         <outlet property="name" destination="leF-sd-idS" id="GDg-rd-a9V"/>
-                        <outlet property="previousTitles" destination="Zl3-pz-Yjp" id="gKq-IE-huN"/>
+                        <outlet property="previousTitles" destination="QWG-hr-ltY" id="Jb0-XE-Wlv"/>
                         <outlet property="userName" destination="NGF-rK-5py" id="QaF-Cy-8it"/>
                         <segue destination="QDY-xz-5cp" kind="modal" identifier="logInFromProfileView" id="iAM-ho-yBd"/>
                         <segue destination="cBO-dc-ZzP" kind="modal" identifier="editViewFromProfileView" id="yoZ-cG-e1m"/>
@@ -279,14 +278,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3KC-fA-asf">
-                                <rect key="frame" x="40" y="385" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsI-36-rRI">
                                 <rect key="frame" x="40" y="39" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -339,6 +330,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="previous title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-oC-zT2">
+                                <rect key="frame" x="20" y="345" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -347,7 +344,7 @@
                         <outlet property="currentTitleField" destination="MKv-N3-g3T" id="tBE-fq-11Q"/>
                         <outlet property="emailField" destination="WUP-N3-0XO" id="SGy-bL-nEM"/>
                         <outlet property="fullNameField" destination="anQ-XF-NeV" id="UfX-hb-Eds"/>
-                        <outlet property="previousTitles" destination="3KC-fA-asf" id="pWT-LC-jTh"/>
+                        <outlet property="previousTitle" destination="HZ8-oC-zT2" id="nmJ-7V-85V"/>
                         <outlet property="userNameField" destination="RPk-se-3e0" id="qoX-Qp-AI1"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromEditView" id="Q1t-iC-BVH"/>
                     </connections>
@@ -369,37 +366,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GW0-39-7Vc">
-                                <rect key="frame" x="20" y="185" width="280" height="30"/>
+                                <rect key="frame" x="20" y="98" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-9I-Ncn">
-                                <rect key="frame" x="20" y="225" width="280" height="30"/>
+                                <rect key="frame" x="20" y="138" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="fullname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-94-6Zs">
-                                <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                <rect key="frame" x="20" y="58" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="current title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uko-sP-MVP">
-                                <rect key="frame" x="20" y="345" width="280" height="30"/>
+                                <rect key="frame" x="20" y="258" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="company" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgf-Vk-8wZ">
-                                <rect key="frame" x="20" y="305" width="280" height="30"/>
+                                <rect key="frame" x="20" y="218" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9u-TO-xr2">
-                                <rect key="frame" x="20" y="265" width="280" height="30"/>
+                                <rect key="frame" x="20" y="178" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -424,6 +421,12 @@
                                     <action selector="cancel:" destination="wHf-OV-A7y" eventType="touchUpInside" id="90P-IP-la2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="previous title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-RE-69T">
+                                <rect key="frame" x="20" y="298" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -431,9 +434,10 @@
                         <outlet property="companyField" destination="mgf-Vk-8wZ" id="hWo-kA-Rvs"/>
                         <outlet property="currentTitleField" destination="Uko-sP-MVP" id="Rv8-9i-GKy"/>
                         <outlet property="emailField" destination="j9u-TO-xr2" id="O3y-Bw-yEq"/>
-                        <outlet property="fullNameField" destination="1yo-94-6Zs" id="UNb-Mz-Ztf"/>
+                        <outlet property="fullNameField" destination="1yo-94-6Zs" id="miO-Xm-2eI"/>
                         <outlet property="passwordField" destination="ACL-9I-Ncn" id="gnz-02-0d7"/>
-                        <outlet property="userNameField" destination="GW0-39-7Vc" id="KgX-eY-rGA"/>
+                        <outlet property="previousTitleField" destination="zZa-RE-69T" id="ayb-ML-y4I"/>
+                        <outlet property="userNameField" destination="GW0-39-7Vc" id="1tz-GD-Nwi"/>
                         <segue destination="QDY-xz-5cp" kind="modal" identifier="logInFromSignUp" id="pIc-Ew-oUM"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromSignUp" id="vcv-SN-FRf"/>
                     </connections>
@@ -453,7 +457,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iAM-ho-yBd"/>
-        <segue reference="0hC-xN-YqH"/>
+        <segue reference="Q1t-iC-BVH"/>
+        <segue reference="pIc-Ew-oUM"/>
     </inferredMetricsTieBreakers>
 </document>

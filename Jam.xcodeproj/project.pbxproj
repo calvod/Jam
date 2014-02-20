@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F12222AE18B3C83500403539 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222AD18B3C83500403539 /* SignUpViewController.m */; };
 		F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222B118B3C8F300403539 /* EditProfileViewController.m */; };
 		F12222B518B4215D00403539 /* AskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12222B418B4215D00403539 /* AskViewController.m */; };
 		F127DF9E18B30973005728D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DF9D18B30973005728D7 /* Foundation.framework */; };
@@ -37,6 +36,7 @@
 		F171692418B30EBB009ED414 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F171692318B30EBB009ED414 /* LoginViewController.m */; };
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
+		F1B256F818B650D80094F1C1 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B256F718B650D80094F1C1 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F12222AD18B3C83500403539 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		F12222AF18B3C83F00403539 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		F12222B018B3C8F300403539 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		F12222B118B3C8F300403539 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
 		F12222B318B4215D00403539 /* AskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskViewController.h; sourceTree = "<group>"; };
@@ -89,6 +87,8 @@
 		F171692318B30EBB009ED414 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F171692618B30F34009ED414 /* logInButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logInButton.png; path = "../../Hive-old/Hive/logInButton.png"; sourceTree = "<group>"; };
 		F171692818B30F3D009ED414 /* signUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signUpButton.png; path = "../../Hive-old/Hive/signUpButton.png"; sourceTree = "<group>"; };
+		F1B256F618B650D80094F1C1 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		F1B256F718B650D80094F1C1 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,12 +174,12 @@
 				F127DFAF18B30973005728D7 /* Main.storyboard */,
 				F127DFB218B30973005728D7 /* ProfileViewController.h */,
 				F127DFB318B30973005728D7 /* ProfileViewController.m */,
+				F1B256F618B650D80094F1C1 /* SignUpViewController.h */,
+				F1B256F718B650D80094F1C1 /* SignUpViewController.m */,
 				F12222B018B3C8F300403539 /* EditProfileViewController.h */,
 				F12222B118B3C8F300403539 /* EditProfileViewController.m */,
 				F171692218B30EBB009ED414 /* LoginViewController.h */,
 				F171692318B30EBB009ED414 /* LoginViewController.m */,
-				F12222AF18B3C83F00403539 /* SignUpViewController.h */,
-				F12222AD18B3C83500403539 /* SignUpViewController.m */,
 				F12222B318B4215D00403539 /* AskViewController.h */,
 				F12222B418B4215D00403539 /* AskViewController.m */,
 				F127DFB518B30973005728D7 /* Images.xcassets */,
@@ -326,11 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F171692418B30EBB009ED414 /* LoginViewController.m in Sources */,
-				F12222AE18B3C83500403539 /* SignUpViewController.m in Sources */,
 				F12222B518B4215D00403539 /* AskViewController.m in Sources */,
 				F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */,
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,
+				F1B256F818B650D80094F1C1 /* SignUpViewController.m in Sources */,
 				F127DFAA18B30973005728D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

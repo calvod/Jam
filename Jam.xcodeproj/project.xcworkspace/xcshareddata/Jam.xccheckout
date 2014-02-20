@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B6E032CE-5E82-4C3B-9B5C-406EC8D70E0F</string>
+	<string>4A117E49-612A-47B0-BC6D-3E1C6CE9D2D8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Jam</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9E303149-5E4C-4501-826D-76CEF4394D19</key>
-		<string>ssh://github.com/calvod/Hive.git</string>
+		<key>38684E35-2989-44D4-8D32-05602C3B4EFF</key>
+		<string>ssh://github.com/calvod/Jam.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Jam.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9E303149-5E4C-4501-826D-76CEF4394D19</key>
+		<key>38684E35-2989-44D4-8D32-05602C3B4EFF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/calvod/Hive.git</string>
+	<string>ssh://github.com/calvod/Jam.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9E303149-5E4C-4501-826D-76CEF4394D19</string>
+	<string>38684E35-2989-44D4-8D32-05602C3B4EFF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9E303149-5E4C-4501-826D-76CEF4394D19</string>
+			<string>38684E35-2989-44D4-8D32-05602C3B4EFF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Jam</string>
 		</dict>

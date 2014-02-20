@@ -15,7 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *userName;
 @property (strong, nonatomic) IBOutlet UILabel *company;
 @property (strong, nonatomic) IBOutlet UILabel *currentTitle;
-@property (strong, nonatomic) IBOutlet UITextView *previousTitles;
+@property (strong, nonatomic) IBOutlet UILabel *previousTitles;
 
 -(IBAction)edit:(id)sender;
 -(IBAction)logout:(id)sender;

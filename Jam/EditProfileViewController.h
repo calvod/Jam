@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *companyField;
 @property (weak, nonatomic) IBOutlet UITextField *currentTitleField;
-@property (weak, nonatomic) IBOutlet UITextView *previousTitles;
+@property (weak, nonatomic) IBOutlet UITextField *previousTitle;
 
 - (IBAction)save:(id)sender;
 - (IBAction)cancel:(id)sender;

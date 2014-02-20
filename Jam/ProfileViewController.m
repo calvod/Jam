@@ -39,6 +39,7 @@
     self.userName.text = [currentUser objectForKey:@"username"];
     self.company.text = [currentUser objectForKey:@"company"];
     self.currentTitle.text = [currentUser objectForKey:@"currenttitle"];
+    self.previousTitles.text = [currentUser objectForKey:@"previoustitle"];
     //self.previousTitles.text = [currentUser objectForKey:@"fullname"];
     
 }

@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *companyField;
 @property (weak, nonatomic) IBOutlet UITextField *currentTitleField;
+@property (weak, nonatomic) IBOutlet UITextField *previousTitleField;
 
 - (IBAction)signup:(id)sender;
 - (IBAction)cancel:(id)sender;

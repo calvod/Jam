@@ -52,6 +52,11 @@
     } else {
         self.currentTitleField.placeholder = @"current title";
     }
+    if ([[[PFUser currentUser] objectForKey:@"previoustitle"] length] > 0) {
+        self.previousTitle.placeholder = [[PFUser currentUser] objectForKey:@"previoustitle"];
+    } else {
+        self.previousTitle.placeholder = @"previous title";
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,6 +81,9 @@
     }
     if (self.currentTitleField.text.length > 0) {
         [[PFUser currentUser] setObject:self.currentTitleField.text forKey:@"currenttitle"];
+    }
+    if (self.previousTitle.text.length > 0) {
+        [[PFUser currentUser] setObject:self.previousTitle.text forKey:@"previoustitle"];
     }
     
     [[PFUser currentUser] saveInBackground];
