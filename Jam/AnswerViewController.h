@@ -12,10 +12,11 @@
 @interface AnswerViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *question;
-
+@property (strong, nonatomic) IBOutlet UITextField *answer;
+@property (strong, nonatomic) IBOutlet UILabel *askerName;
+@property (strong, nonatomic) IBOutlet UILabel *askerCurrentTitle;
 
 -(IBAction)answer:(id)sender;
-
 -(IBAction)me:(id)sender;
 -(IBAction)ask:(id)sender;
 -(IBAction)myQs:(id)sender;

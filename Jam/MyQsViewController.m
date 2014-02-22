@@ -27,6 +27,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    PFUser *currentUser = [PFUser currentUser];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    self.question.text = [currentUser objectForKey:@"myquestion"];
+    self.answererName.text = [currentInstallation objectForKey:@"answerer"];
+    self.answererCurrentTitle.text = [currentInstallation objectForKey:@"answererCurrentTitle"];
+    
+    if ([[currentInstallation objectForKey:@"answer"] length] == 0) {
+        self.answer.text = @"no one has answered yet";
+    } else {
+        self.answer.text = [currentInstallation objectForKey:@"answer"];
+    }
 }
 
 - (void)didReceiveMemoryWarning

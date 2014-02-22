@@ -65,7 +65,7 @@
     [[PFInstallation currentInstallation] setObject:@false forKey:@"answered"];
     [[PFInstallation currentInstallation] setObject:[user objectForKey:@"fullname"] forKey:@"asker"];
     [[PFInstallation currentInstallation] setObject:@"" forKey:@"answerer"];
-    
+    [[PFInstallation currentInstallation] saveInBackground];
     [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
     
     NSLog(@"Question shot");

@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface MyQsViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *question;
+@property (strong, nonatomic) IBOutlet UILabel *answer;
+@property (strong, nonatomic) IBOutlet UILabel *answererName;
+@property (strong, nonatomic) IBOutlet UILabel *answererCurrentTitle;
 
 -(IBAction)me:(id)sender;
 -(IBAction)ask:(id)sender;

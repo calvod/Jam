@@ -28,7 +28,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.question.text = [[PFInstallation currentInstallation] objectForKey:@"question"];
-    
+    self.askerName.text = [[PFInstallation currentInstallation] objectForKey:@"asker"];
+    self.askerCurrentTitle.text = [[PFInstallation currentInstallation] objectForKey:@"askerCurrentTitle"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +40,12 @@
 
 -(IBAction)answer:(id)sender {
     NSLog(@"Shot the answer back");
+    PFUser *user = [PFUser currentUser];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setObject:self.answer.text forKey:@"answer"];
+    [currentInstallation setObject:[user objectForKey:@"fullname"] forKey:@"answerer"];
+    [currentInstallation setObject:[user objectForKey:@"currenttitle"] forKey:@"answererCurrentTitle"];
+    [currentInstallation saveInBackground];
 }
 
 -(IBAction)me:(id)sender {
