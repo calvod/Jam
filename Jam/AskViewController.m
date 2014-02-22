@@ -59,6 +59,10 @@
     [push setData:data];
     [push sendPushInBackground];
     
+    //YOLO around it for now
+    [[PFInstallation currentInstallation] setObject:self.question.text forKey:@"question"];
+    //[[PFInstallation currentInstallation] setObject:FALSE forKey:@"answered"];
+    
     [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
     
     NSLog(@"Question shot");
@@ -66,6 +70,7 @@
 
 -(IBAction)answer:(id)sender {
     //segue to answer view controller
+    [self performSegueWithIdentifier:@"answerViewFromAskView" sender:self];
 }
 
 -(IBAction)me:(id)sender {

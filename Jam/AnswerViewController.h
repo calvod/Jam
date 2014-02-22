@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface AnswerViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *question;
+
+
+-(IBAction)answer:(id)sender;
 
 -(IBAction)me:(id)sender;
 -(IBAction)ask:(id)sender;

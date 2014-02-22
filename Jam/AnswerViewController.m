@@ -27,12 +27,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.question.text = [[PFInstallation currentInstallation] objectForKey:@"question"];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)answer:(id)sender {
+    NSLog(@"Shot the answer back");
 }
 
 -(IBAction)me:(id)sender {

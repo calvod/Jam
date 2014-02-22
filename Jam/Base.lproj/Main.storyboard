@@ -252,10 +252,21 @@
                                     <action selector="me:" destination="4oX-zf-WuJ" eventType="touchUpInside" id="2K1-Ss-nyP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aak-jD-jZQ">
+                                <rect key="frame" x="135" y="53" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="answer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer:" destination="4oX-zf-WuJ" eventType="touchUpInside" id="HZp-aH-fRz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="question" destination="GQV-bE-Hgu" id="cWf-UA-kUf"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromAnswerView" id="oUT-BN-Sh0"/>
                         <segue destination="Sya-eI-vAB" kind="modal" identifier="askViewFromAnswerView" id="C0I-mq-ndU"/>
                     </connections>
@@ -398,7 +409,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="question" destination="ekw-M8-q7J" id="mYK-h7-ZCX"/>
+                        <outlet property="question" destination="ekw-M8-q7J" id="E4L-DU-2oD"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromAskView" modalTransitionStyle="crossDissolve" id="0hC-xN-YqH"/>
                         <segue destination="4oX-zf-WuJ" kind="modal" identifier="answerViewFromAskView" modalTransitionStyle="crossDissolve" id="URe-I4-WUi"/>
                     </connections>
@@ -598,9 +609,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iAM-ho-yBd"/>
         <segue reference="oUT-BN-Sh0"/>
-        <segue reference="OaF-R9-fbu"/>
+        <segue reference="URe-I4-WUi"/>
         <segue reference="C0I-mq-ndU"/>
+        <segue reference="iAM-ho-yBd"/>
     </inferredMetricsTieBreakers>
 </document>
