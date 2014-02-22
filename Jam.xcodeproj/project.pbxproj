@@ -37,6 +37,9 @@
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
 		F1B256F818B650D80094F1C1 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B256F718B650D80094F1C1 /* SignUpViewController.m */; };
+		F1B256FB18B7F5A40094F1C1 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B256FA18B7F5A40094F1C1 /* LoadViewController.m */; };
+		F1B256FD18B809AE0094F1C1 /* pop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F1B256FC18B809AE0094F1C1 /* pop.m4a */; };
+		F1B2570018B810520094F1C1 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B256FF18B810520094F1C1 /* AnswerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,11 @@
 		F171692818B30F3D009ED414 /* signUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signUpButton.png; path = "../../Hive-old/Hive/signUpButton.png"; sourceTree = "<group>"; };
 		F1B256F618B650D80094F1C1 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		F1B256F718B650D80094F1C1 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		F1B256F918B7F5A40094F1C1 /* LoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
+		F1B256FA18B7F5A40094F1C1 /* LoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
+		F1B256FC18B809AE0094F1C1 /* pop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pop.m4a; sourceTree = "<group>"; };
+		F1B256FE18B810520094F1C1 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
+		F1B256FF18B810520094F1C1 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,10 @@
 				F127DFAC18B30973005728D7 /* AppDelegate.h */,
 				F127DFAD18B30973005728D7 /* AppDelegate.m */,
 				F127DFAF18B30973005728D7 /* Main.storyboard */,
+				F1B256FE18B810520094F1C1 /* AnswerViewController.h */,
+				F1B256FF18B810520094F1C1 /* AnswerViewController.m */,
+				F1B256F918B7F5A40094F1C1 /* LoadViewController.h */,
+				F1B256FA18B7F5A40094F1C1 /* LoadViewController.m */,
 				F127DFB218B30973005728D7 /* ProfileViewController.h */,
 				F127DFB318B30973005728D7 /* ProfileViewController.m */,
 				F1B256F618B650D80094F1C1 /* SignUpViewController.h */,
@@ -182,6 +194,7 @@
 				F171692318B30EBB009ED414 /* LoginViewController.m */,
 				F12222B318B4215D00403539 /* AskViewController.h */,
 				F12222B418B4215D00403539 /* AskViewController.m */,
+				F1B256FC18B809AE0094F1C1 /* pop.m4a */,
 				F127DFB518B30973005728D7 /* Images.xcassets */,
 				F127DFA418B30973005728D7 /* Supporting Files */,
 			);
@@ -302,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B256FD18B809AE0094F1C1 /* pop.m4a in Resources */,
 				F127DFB618B30973005728D7 /* Images.xcassets in Resources */,
 				F171692918B30F3D009ED414 /* signUpButton.png in Resources */,
 				F127DFA818B30973005728D7 /* InfoPlist.strings in Resources */,
@@ -331,6 +345,8 @@
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,
 				F1B256F818B650D80094F1C1 /* SignUpViewController.m in Sources */,
+				F1B256FB18B7F5A40094F1C1 /* LoadViewController.m in Sources */,
+				F1B2570018B810520094F1C1 /* AnswerViewController.m in Sources */,
 				F127DFAA18B30973005728D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

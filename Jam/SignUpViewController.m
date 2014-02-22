@@ -70,15 +70,11 @@
         }];
         
 
-//         {
-//            if (!error) {
-//                NSLog(@"Sign up successful for %@", [newUser objectForKey:@"fullname"]);
-//                [self performSegueWithIdentifier:@"profileViewFromSignUp" sender:self];
-//            } else {
-//                NSLog(@"Error while signing up");
-//                // Show the errorString somewhere and let the user try again.
-//            }
-//        }];
+        //subscribe to receive push notifications for it's previous title and current title
+        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+        [currentInstallation addUniqueObject:[newUser objectForKey:@"currenttitle"] forKey:@"channels"];
+        [currentInstallation addUniqueObject:[newUser objectForKey:@"previoustitle"] forKey:@"channels"];
+        [currentInstallation saveInBackground];
     }
 }
 

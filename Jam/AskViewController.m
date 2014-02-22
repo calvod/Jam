@@ -37,14 +37,33 @@
 
 -(IBAction)ask:(id)sender {
     
-    // Create our Installation query
-    PFQuery *pushQuery = [PFInstallation query];
-    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+//    // Create our Installation query
+//    PFQuery *pushQuery = [PFInstallation query];
+//    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+//    
+//    // Send push notification to query
+//    [PFPush sendPushMessageToQueryInBackground:pushQuery
+//                                   withMessage:self.question.text];
     
-    // Send push notification to query
-    [PFPush sendPushMessageToQueryInBackground:pushQuery
-                                   withMessage:self.question.text];
+    // Send a notification to all devices subscribed to the previoustitle and currenttitle channel.
+    PFUser *user = [PFUser currentUser];
+    NSArray *channels = [NSArray arrayWithObjects:[user objectForKey:@"currenttitle"], [user objectForKey:@"previoustitle"], nil];
+    
+    NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
+                          self.question.text, @"alert",
+                          @"Increment", @"badge",
+                          @"pop.m4a", @"sound",
+                          nil];
+    PFPush *push = [[PFPush alloc] init];
+    [push setChannels:channels];
+    [push setData:data];
+    [push sendPushInBackground];
+    
+    [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
+    
+    NSLog(@"Question shot");
 }
+
 -(IBAction)answer:(id)sender {
     //segue to answer view controller
 }

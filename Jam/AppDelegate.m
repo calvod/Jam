@@ -42,6 +42,25 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [PFPush handlePush:userInfo];
+    
+    
+    NSString *photoId = [userInfo objectForKey:@"p"];
+    PFObject *targetPhoto = [PFObject objectWithoutDataWithClassName:@"Photo"
+                                                            objectId:photoId];
+    
+    // Fetch photo object
+    [targetPhoto fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        // Show photo view controller
+        if (error) {
+            //pass
+        } else if ([PFUser currentUser]) {
+            //PhotoVC *viewController = [[PhotoVC alloc] initWithPhoto:object];
+           // [self.navController pushViewController:viewController animated:YES];
+            //handler(UIBackgroundFetchResultNewData);
+        } else {
+            //handler(UIBackgroundModeNoData);
+        }
+    }];
 }
 
 

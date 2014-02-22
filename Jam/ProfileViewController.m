@@ -29,11 +29,6 @@
     // Do any additional setup after loading the view from its nib.
     
     PFUser *currentUser = [PFUser currentUser];
-    if (currentUser) {
-        // nothing
-    } else {
-        [self performSegueWithIdentifier:@"logInFromProfileView" sender:self];
-    }
     
     self.name.text = [currentUser objectForKey:@"fullname"];
     self.userName.text = [currentUser objectForKey:@"username"];
@@ -78,7 +73,7 @@
 }
 
 -(IBAction)answer:(id)sender {
-   
+    [self performSegueWithIdentifier:@"answerViewFromProfileView" sender:self];
 }
 
 -(IBAction)ask:(id)sender {

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#include "LoginViewController.h"
 
 @interface ProfileViewController : UIViewController
 
