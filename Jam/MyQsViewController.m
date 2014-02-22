@@ -27,9 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    PFUser *currentUser = [PFUser currentUser];
+    //eaPFUser *currentUser = [PFUser currentUser];
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    self.question.text = [currentUser objectForKey:@"myquestion"];
+    self.question.text = [currentInstallation objectForKey:@"question"];
     self.answererName.text = [currentInstallation objectForKey:@"answerer"];
     self.answererCurrentTitle.text = [currentInstallation objectForKey:@"answererCurrentTitle"];
     

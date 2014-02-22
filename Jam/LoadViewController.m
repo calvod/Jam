@@ -30,6 +30,10 @@
     [[PFUser currentUser] refresh];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 -(void)hive:(id)sender {
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {

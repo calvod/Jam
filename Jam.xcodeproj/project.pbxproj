@@ -34,6 +34,8 @@
 		F127DFE518B30A6E005728D7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFE418B30A6E005728D7 /* StoreKit.framework */; };
 		F127DFE718B30A74005728D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFE618B30A74005728D7 /* SystemConfiguration.framework */; };
 		F12CADED18B858B500741468 /* MyQsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12CADEC18B858B500741468 /* MyQsViewController.m */; };
+		F12CADF118B8975300741468 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF018B8975300741468 /* logo.png */; };
+		F12CADF318B8986500741468 /* diego.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF218B8986500741468 /* diego.png */; };
 		F171692418B30EBB009ED414 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F171692318B30EBB009ED414 /* LoginViewController.m */; };
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
@@ -89,6 +91,8 @@
 		F127DFE618B30A74005728D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F12CADEB18B858B500741468 /* MyQsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQsViewController.h; sourceTree = "<group>"; };
 		F12CADEC18B858B500741468 /* MyQsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQsViewController.m; sourceTree = "<group>"; };
+		F12CADF018B8975300741468 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F12CADF218B8986500741468 /* diego.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diego.png; sourceTree = "<group>"; };
 		F171692218B30EBB009ED414 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F171692318B30EBB009ED414 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F171692618B30F34009ED414 /* logInButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logInButton.png; path = "../../Hive-old/Hive/logInButton.png"; sourceTree = "<group>"; };
@@ -238,7 +242,9 @@
 		F171692518B30F26009ED414 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
+				F12CADF018B8975300741468 /* logo.png */,
 				F171692818B30F3D009ED414 /* signUpButton.png */,
+				F12CADF218B8986500741468 /* diego.png */,
 				F171692618B30F34009ED414 /* logInButton.png */,
 			);
 			name = Pics;
@@ -323,6 +329,8 @@
 				F1B256FD18B809AE0094F1C1 /* pop.m4a in Resources */,
 				F127DFB618B30973005728D7 /* Images.xcassets in Resources */,
 				F171692918B30F3D009ED414 /* signUpButton.png in Resources */,
+				F12CADF118B8975300741468 /* logo.png in Resources */,
+				F12CADF318B8986500741468 /* diego.png in Resources */,
 				F127DFA818B30973005728D7 /* InfoPlist.strings in Resources */,
 				F127DFB118B30973005728D7 /* Main.storyboard in Resources */,
 				F171692718B30F34009ED414 /* logInButton.png in Resources */,
