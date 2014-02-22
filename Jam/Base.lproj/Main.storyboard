@@ -462,13 +462,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK5-iH-jaV">
-                                <rect key="frame" x="248" y="378" width="42" height="21"/>
+                                <rect key="frame" x="125" y="378" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmr-M7-IuR">
-                                <rect key="frame" x="248" y="408" width="42" height="21"/>
+                                <rect key="frame" x="125" y="408" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -859,9 +859,9 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="t9j-ch-PVm"/>
-        <segue reference="113-Re-Xpv"/>
-        <segue reference="0hc-SY-vNd"/>
+        <segue reference="oUT-BN-Sh0"/>
         <segue reference="doW-w7-rVY"/>
-        <segue reference="wMo-2h-7Uf"/>
+        <segue reference="0hc-SY-vNd"/>
+        <segue reference="C0I-mq-ndU"/>
     </inferredMetricsTieBreakers>
 </document>

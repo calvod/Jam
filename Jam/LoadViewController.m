@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [[PFUser currentUser] refresh];
 }
 
 -(void)hive:(id)sender {

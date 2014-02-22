@@ -64,7 +64,7 @@
     [user setObject:self.question.text forKey:@"myquestion"];
     [[PFInstallation currentInstallation] setObject:@false forKey:@"answered"];
     [[PFInstallation currentInstallation] setObject:[user objectForKey:@"fullname"] forKey:@"asker"];
-    [[PFInstallation currentInstallation] setObject:@"" forKey:@"answerer"];
+    [[PFInstallation currentInstallation] setObject:[user objectForKey:@"currenttitle"] forKey:@"askerCurrentTitle"];
     [[PFInstallation currentInstallation] saveInBackground];
     [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
     
