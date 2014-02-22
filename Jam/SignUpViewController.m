@@ -82,10 +82,11 @@
         
 
         //subscribe to receive push notifications for it's previous title and current title
-        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-        [currentInstallation addUniqueObject:[newUser objectForKey:@"currenttitle"] forKey:@"channels"];
-        [currentInstallation addUniqueObject:[newUser objectForKey:@"previoustitle"] forKey:@"channels"];
-        [currentInstallation saveInBackground];
+        PFInstallation *newInstallation = [[PFInstallation alloc] init];
+        [newInstallation addUniqueObject:[newUser objectForKey:@"fullname"] forKey:@"asker"];
+        [newInstallation addUniqueObject:[newUser objectForKey:@"currenttitle"] forKey:@"channels"];
+        [newInstallation addUniqueObject:[newUser objectForKey:@"previoustitle"] forKey:@"channels"];
+        [newInstallation saveInBackground];
     }
 }
 

@@ -66,9 +66,11 @@
     [[PFInstallation currentInstallation] setObject:[user objectForKey:@"fullname"] forKey:@"asker"];
     [[PFInstallation currentInstallation] setObject:[user objectForKey:@"currenttitle"] forKey:@"askerCurrentTitle"];
     [[PFInstallation currentInstallation] saveInBackground];
-    [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
+    
+    
     
     NSLog(@"Question shot");
+    [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
 }
 
 //make keyboard get out of the way
@@ -86,7 +88,12 @@
 }
 
 -(IBAction)myQs:(id)sender {
-    [self performSegueWithIdentifier:@"myQsViewFromAskView" sender:self];
+    if ([[[PFInstallation currentInstallation] objectForKey:@"asker"] isEqualToString:[[PFUser currentUser] objectForKey:@"fullname" ]]) {
+        [self performSegueWithIdentifier:@"myQsViewFromAskView" sender:self];
+        NSLog(@"This person, %@, asked the current question on the board, since it's the same person as %@", [[PFUser currentUser] objectForKey:@"fullname"], [[PFInstallation currentInstallation] objectForKey:@"asker"]);
+    } else {
+        [self performSegueWithIdentifier:@"noQsViewFromAskView" sender:self];
+    }
 }
 
 @end

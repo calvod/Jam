@@ -81,7 +81,13 @@
 }
 
 -(IBAction)myQs:(id)sender {
-    [self performSegueWithIdentifier:@"myQsViewFromProfileView" sender:self];
+    if ([[[PFInstallation currentInstallation] objectForKey:@"asker"] isEqualToString:[[PFUser currentUser] objectForKey:@"fullname" ]]) {
+        [self performSegueWithIdentifier:@"myQsViewFromProfileView" sender:self];
+        NSLog(@"This person, %@, asked the current question on the board, since it's the same person as %@", [[PFUser currentUser] objectForKey:@"fullname"], [[PFInstallation currentInstallation] objectForKey:@"asker"]);
+    } else {
+        [self performSegueWithIdentifier:@"noQsViewFromProfileView" sender:self];
+    }
+    
 }
 
 @end

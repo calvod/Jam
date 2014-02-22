@@ -36,6 +36,15 @@
 		F12CADED18B858B500741468 /* MyQsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12CADEC18B858B500741468 /* MyQsViewController.m */; };
 		F12CADF118B8975300741468 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF018B8975300741468 /* logo.png */; };
 		F12CADF318B8986500741468 /* diego.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF218B8986500741468 /* diego.png */; };
+		F12CADF618B89D2B00741468 /* NoQsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12CADF518B89D2B00741468 /* NoQsViewController.m */; };
+		F12CADFF18B8AC9900741468 /* myqsw.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF718B8AC9900741468 /* myqsw.png */; };
+		F12CAE0018B8AC9900741468 /* myqsb.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF818B8AC9900741468 /* myqsb.png */; };
+		F12CAE0118B8AC9900741468 /* meb.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADF918B8AC9900741468 /* meb.png */; };
+		F12CAE0218B8AC9900741468 /* mew.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADFA18B8AC9900741468 /* mew.png */; };
+		F12CAE0318B8AC9900741468 /* askw.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADFB18B8AC9900741468 /* askw.png */; };
+		F12CAE0418B8AC9900741468 /* askb.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADFC18B8AC9900741468 /* askb.png */; };
+		F12CAE0518B8AC9900741468 /* answerb.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADFD18B8AC9900741468 /* answerb.png */; };
+		F12CAE0618B8AC9900741468 /* answerw.png in Resources */ = {isa = PBXBuildFile; fileRef = F12CADFE18B8AC9900741468 /* answerw.png */; };
 		F171692418B30EBB009ED414 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F171692318B30EBB009ED414 /* LoginViewController.m */; };
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
@@ -93,6 +102,16 @@
 		F12CADEC18B858B500741468 /* MyQsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQsViewController.m; sourceTree = "<group>"; };
 		F12CADF018B8975300741468 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F12CADF218B8986500741468 /* diego.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diego.png; sourceTree = "<group>"; };
+		F12CADF418B89D2B00741468 /* NoQsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoQsViewController.h; sourceTree = "<group>"; };
+		F12CADF518B89D2B00741468 /* NoQsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoQsViewController.m; sourceTree = "<group>"; };
+		F12CADF718B8AC9900741468 /* myqsw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myqsw.png; sourceTree = "<group>"; };
+		F12CADF818B8AC9900741468 /* myqsb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myqsb.png; sourceTree = "<group>"; };
+		F12CADF918B8AC9900741468 /* meb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meb.png; sourceTree = "<group>"; };
+		F12CADFA18B8AC9900741468 /* mew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mew.png; sourceTree = "<group>"; };
+		F12CADFB18B8AC9900741468 /* askw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = askw.png; sourceTree = "<group>"; };
+		F12CADFC18B8AC9900741468 /* askb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = askb.png; sourceTree = "<group>"; };
+		F12CADFD18B8AC9900741468 /* answerb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answerb.png; sourceTree = "<group>"; };
+		F12CADFE18B8AC9900741468 /* answerw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answerw.png; sourceTree = "<group>"; };
 		F171692218B30EBB009ED414 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F171692318B30EBB009ED414 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F171692618B30F34009ED414 /* logInButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logInButton.png; path = "../../Hive-old/Hive/logInButton.png"; sourceTree = "<group>"; };
@@ -189,6 +208,8 @@
 				F127DFAF18B30973005728D7 /* Main.storyboard */,
 				F12CADEB18B858B500741468 /* MyQsViewController.h */,
 				F12CADEC18B858B500741468 /* MyQsViewController.m */,
+				F12CADF418B89D2B00741468 /* NoQsViewController.h */,
+				F12CADF518B89D2B00741468 /* NoQsViewController.m */,
 				F1B256FE18B810520094F1C1 /* AnswerViewController.h */,
 				F1B256FF18B810520094F1C1 /* AnswerViewController.m */,
 				F1B256F918B7F5A40094F1C1 /* LoadViewController.h */,
@@ -242,6 +263,14 @@
 		F171692518B30F26009ED414 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
+				F12CADF718B8AC9900741468 /* myqsw.png */,
+				F12CADF818B8AC9900741468 /* myqsb.png */,
+				F12CADF918B8AC9900741468 /* meb.png */,
+				F12CADFA18B8AC9900741468 /* mew.png */,
+				F12CADFB18B8AC9900741468 /* askw.png */,
+				F12CADFC18B8AC9900741468 /* askb.png */,
+				F12CADFD18B8AC9900741468 /* answerb.png */,
+				F12CADFE18B8AC9900741468 /* answerw.png */,
 				F12CADF018B8975300741468 /* logo.png */,
 				F171692818B30F3D009ED414 /* signUpButton.png */,
 				F12CADF218B8986500741468 /* diego.png */,
@@ -326,13 +355,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12CAE0418B8AC9900741468 /* askb.png in Resources */,
+				F12CAE0518B8AC9900741468 /* answerb.png in Resources */,
 				F1B256FD18B809AE0094F1C1 /* pop.m4a in Resources */,
 				F127DFB618B30973005728D7 /* Images.xcassets in Resources */,
+				F12CAE0018B8AC9900741468 /* myqsb.png in Resources */,
+				F12CAE0618B8AC9900741468 /* answerw.png in Resources */,
+				F12CAE0218B8AC9900741468 /* mew.png in Resources */,
+				F12CADFF18B8AC9900741468 /* myqsw.png in Resources */,
 				F171692918B30F3D009ED414 /* signUpButton.png in Resources */,
 				F12CADF118B8975300741468 /* logo.png in Resources */,
+				F12CAE0318B8AC9900741468 /* askw.png in Resources */,
 				F12CADF318B8986500741468 /* diego.png in Resources */,
 				F127DFA818B30973005728D7 /* InfoPlist.strings in Resources */,
 				F127DFB118B30973005728D7 /* Main.storyboard in Resources */,
+				F12CAE0118B8AC9900741468 /* meb.png in Resources */,
 				F171692718B30F34009ED414 /* logInButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +393,7 @@
 				F12222B518B4215D00403539 /* AskViewController.m in Sources */,
 				F12CADED18B858B500741468 /* MyQsViewController.m in Sources */,
 				F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */,
+				F12CADF618B89D2B00741468 /* NoQsViewController.m in Sources */,
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,
 				F1B256F818B650D80094F1C1 /* SignUpViewController.m in Sources */,

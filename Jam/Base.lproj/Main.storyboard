@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKF-5y-eDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-441" y="-29"/>
+            <point key="canvasLocation" x="-519" y="-29"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -100,7 +100,7 @@
                                     <action selector="edit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ngR-Go-dzy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtB-3W-ybF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtB-3W-ybF">
                                 <rect key="frame" x="0.0" y="488" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,6 +109,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="signUpButton.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY0-pf-tA2">
                                 <rect key="frame" x="80" y="488" width="80" height="80"/>
@@ -204,11 +205,92 @@
                         <segue destination="Sya-eI-vAB" kind="modal" identifier="askViewFromProfileView" modalTransitionStyle="crossDissolve" id="cw9-Lv-dpI"/>
                         <segue destination="4oX-zf-WuJ" kind="modal" identifier="answerViewFromProfileView" modalTransitionStyle="crossDissolve" id="OaF-R9-fbu"/>
                         <segue destination="NYe-3K-Wr0" kind="modal" identifier="myQsViewFromProfileView" modalTransitionStyle="crossDissolve" id="9bO-iK-xiC"/>
+                        <segue destination="oX2-D8-qnN" kind="modal" identifier="noQsViewFromProfileView" modalTransitionStyle="crossDissolve" id="8s2-8k-3Kc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="98" y="-29"/>
+        </scene>
+        <!--No Qs View Controller-->
+        <scene sceneID="fcN-wR-lja">
+            <objects>
+                <viewController id="oX2-D8-qnN" customClass="NoQsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Er-N5-LEu"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9J-hh-X9x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PEr-Kp-fr1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ri-oy-9ab">
+                                <rect key="frame" x="0.0" y="488" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="me">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="me:" destination="oX2-D8-qnN" eventType="touchUpInside" id="RGK-D8-K8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbQ-8O-Czf">
+                                <rect key="frame" x="80" y="488" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="answer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer:" destination="oX2-D8-qnN" eventType="touchUpInside" id="b1g-pN-NJG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBX-pN-27w">
+                                <rect key="frame" x="160" y="488" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="ask">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ask:" destination="oX2-D8-qnN" eventType="touchUpInside" id="UO9-ep-11C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvR-bE-ZUK">
+                                <rect key="frame" x="240" y="488" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="my q's">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="you haven't asked any questions yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOi-nd-IgZ">
+                                <rect key="frame" x="20" y="189" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="4oX-zf-WuJ" kind="modal" identifier="answerViewFromNoQsView" modalTransitionStyle="crossDissolve" id="AD7-ih-C7V"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromNoQsView" modalTransitionStyle="crossDissolve" id="vZb-2k-IA4"/>
+                        <segue destination="Sya-eI-vAB" kind="modal" identifier="askViewFromNoQsView" modalTransitionStyle="crossDissolve" id="Foy-JP-dcC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uak-KX-p5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="725"/>
         </scene>
         <!--My Qs View Controller-->
         <scene sceneID="MxB-Ts-Fc6">
@@ -360,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSH-H3-Sfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-441" y="725"/>
+            <point key="canvasLocation" x="98" y="725"/>
         </scene>
         <!--Answer View Controller-->
         <scene sceneID="yRr-3g-L6x">
@@ -484,11 +566,12 @@
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromAnswerView" modalTransitionStyle="crossDissolve" id="oUT-BN-Sh0"/>
                         <segue destination="Sya-eI-vAB" kind="modal" identifier="askViewFromAnswerView" modalTransitionStyle="crossDissolve" id="C0I-mq-ndU"/>
                         <segue destination="NYe-3K-Wr0" kind="modal" identifier="myQsViewFromAnswerView" modalTransitionStyle="crossDissolve" id="0hc-SY-vNd"/>
+                        <segue destination="oX2-D8-qnN" kind="modal" identifier="noQsViewFromAnswerView" modalTransitionStyle="crossDissolve" id="Okd-Qd-TFk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4BV-m3-bkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="725"/>
+            <point key="canvasLocation" x="742" y="725"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="zMy-b9-YaQ">
@@ -659,11 +742,12 @@
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="profileViewFromAskView" modalTransitionStyle="crossDissolve" id="0hC-xN-YqH"/>
                         <segue destination="4oX-zf-WuJ" kind="modal" identifier="answerViewFromAskView" modalTransitionStyle="crossDissolve" id="URe-I4-WUi"/>
                         <segue destination="NYe-3K-Wr0" kind="modal" identifier="myQsViewFromAskView" modalTransitionStyle="crossDissolve" id="Euc-f2-z2h"/>
+                        <segue destination="oX2-D8-qnN" kind="modal" identifier="noQsViewFromAskView" modalTransitionStyle="crossDissolve" id="MOF-fY-tSl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpN-GN-VQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-441" y="-812"/>
+            <point key="canvasLocation" x="-519" y="-812"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="y3D-IM-0Wb">
@@ -855,6 +939,7 @@
     <resources>
         <image name="diego.png" width="891" height="1143"/>
         <image name="logo.png" width="784" height="486"/>
+        <image name="signUpButton.png" width="90" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -862,8 +947,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DuX-sE-EX8"/>
-        <segue reference="t9j-ch-PVm"/>
+        <segue reference="vZb-2k-IA4"/>
+        <segue reference="8s2-8k-3Kc"/>
+        <segue reference="iAM-ho-yBd"/>
         <segue reference="OaF-R9-fbu"/>
         <segue reference="9bO-iK-xiC"/>
         <segue reference="cw9-Lv-dpI"/>
