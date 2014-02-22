@@ -65,6 +65,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+//make keyboard get out of the way
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.fullNameField resignFirstResponder];
+    [self.userNameField resignFirstResponder];
+    [self.emailField resignFirstResponder];
+    [self.companyField resignFirstResponder];
+    [self.currentTitleField resignFirstResponder];
+    [self.previousTitle resignFirstResponder];
+}
+
 - (IBAction)save:(id)sender {
     
     if (self.fullNameField.text.length > 0) {

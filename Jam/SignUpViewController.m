@@ -35,6 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+//make keyboard get out of the way
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.fullNameField resignFirstResponder];
+    [self.userNameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+    [self.emailField resignFirstResponder];
+    [self.companyField resignFirstResponder];
+    [self.currentTitleField resignFirstResponder];
+    [self.previousTitleField resignFirstResponder];
+}
+
 - (IBAction)signup:(id)sender {
     NSString *fullname = [self.fullNameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *username = [self.userNameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

@@ -71,6 +71,11 @@
     NSLog(@"Question shot");
 }
 
+//make keyboard get out of the way
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.question resignFirstResponder];
+}
+
 -(IBAction)answer:(id)sender {
     //segue to answer view controller
     [self performSegueWithIdentifier:@"answerViewFromAskView" sender:self];

@@ -36,6 +36,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+//make keyboard get out of the way
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+}
 
 - (IBAction)login:(id)sender {
     NSString *username = [self.usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

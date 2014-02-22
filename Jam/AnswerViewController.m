@@ -38,6 +38,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+//make keyboard get out of the way
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.answer resignFirstResponder];
+}
+
 -(IBAction)answer:(id)sender {
     NSLog(@"Shot the answer back");
     PFUser *user = [PFUser currentUser];
