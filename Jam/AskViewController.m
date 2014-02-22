@@ -62,7 +62,8 @@
     //YOLO around it for now
     [[PFInstallation currentInstallation] setObject:self.question.text forKey:@"question"];
     [user setObject:self.question.text forKey:@"myquestion"];
-    [[PFInstallation currentInstallation] setObject:0 forKey:@"answered"];
+    [[PFInstallation currentInstallation] setObject:@false forKey:@"answered"];
+    [[PFInstallation currentInstallation] setObject:@"" forKey:@"answerer"];
     
     [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
     
