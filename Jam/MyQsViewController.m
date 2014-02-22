@@ -1,18 +1,18 @@
 //
-//  AnswerViewController.m
+//  MyQsViewController.m
 //  Jam
 //
 //  Created by Diego Calvo on 2/21/14.
 //  Copyright (c) 2014 Diego Calvo. All rights reserved.
 //
 
-#import "AnswerViewController.h"
+#import "MyQsViewController.h"
 
-@interface AnswerViewController ()
+@interface MyQsViewController ()
 
 @end
 
-@implementation AnswerViewController
+@implementation MyQsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.question.text = [[PFInstallation currentInstallation] objectForKey:@"question"];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,20 +35,28 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)answer:(id)sender {
-    NSLog(@"Shot the answer back");
-}
-
 -(IBAction)me:(id)sender {
-    [self performSegueWithIdentifier:@"profileViewFromAnswerView" sender:self];
+    [self performSegueWithIdentifier:@"profileViewFromMyQsView" sender:self];
 }
 
 -(IBAction)ask:(id)sender {
-    [self performSegueWithIdentifier:@"askViewFromAnswerView" sender:self];
+    [self performSegueWithIdentifier:@"askViewFromMyQsView" sender:self];
+
 }
 
--(IBAction)myQs:(id)sender {
-    [self performSegueWithIdentifier:@"myQsViewFromAnswerView" sender:self];
+-(IBAction)answer:(id)sender {
+    [self performSegueWithIdentifier:@"answerViewFromMyQsView" sender:self];
+
+}
+
+-(IBAction)thanks:(id)sender {
+    //do the thanks thing
+
+}
+
+-(IBAction)followup:(id)sender {
+    [self performSegueWithIdentifier:@"followUpViewFromMyQsView" sender:self];
+
 }
 
 @end

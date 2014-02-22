@@ -61,7 +61,8 @@
     
     //YOLO around it for now
     [[PFInstallation currentInstallation] setObject:self.question.text forKey:@"question"];
-    //[[PFInstallation currentInstallation] setObject:FALSE forKey:@"answered"];
+    [user setObject:self.question.text forKey:@"myquestion"];
+    [[PFInstallation currentInstallation] setObject:0 forKey:@"answered"];
     
     [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
     
@@ -77,9 +78,8 @@
     [self performSegueWithIdentifier:@"profileViewFromAskView" sender:self];
 }
 
-- (void)askQuestion
-{
-    
+-(IBAction)myQs:(id)sender {
+    [self performSegueWithIdentifier:@"myQsViewFromAskView" sender:self];
 }
 
 @end

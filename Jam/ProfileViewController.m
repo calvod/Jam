@@ -80,5 +80,8 @@
      [self performSegueWithIdentifier:@"askViewFromProfileView" sender:self];
 }
 
+-(IBAction)myQs:(id)sender {
+    [self performSegueWithIdentifier:@"myQsViewFromProfileView" sender:self];
+}
 
 @end

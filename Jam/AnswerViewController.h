@@ -18,5 +18,6 @@
 
 -(IBAction)me:(id)sender;
 -(IBAction)ask:(id)sender;
+-(IBAction)myQs:(id)sender;
 
 @end

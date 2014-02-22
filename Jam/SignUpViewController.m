@@ -57,7 +57,7 @@
         [newUser setObject:company forKey:@"company"];
         [newUser setObject:currenttitle forKey:@"currenttitle"];
         [newUser setObject:previoustitle forKey:@"previoustitle"];
-        
+        [newUser setObject:@"" forKey:@"myquestion"];
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
                 // Hooray! Let them use the app now.

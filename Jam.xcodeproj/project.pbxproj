@@ -33,6 +33,7 @@
 		F127DFE318B30A68005728D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFE218B30A68005728D7 /* Security.framework */; };
 		F127DFE518B30A6E005728D7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFE418B30A6E005728D7 /* StoreKit.framework */; };
 		F127DFE718B30A74005728D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127DFE618B30A74005728D7 /* SystemConfiguration.framework */; };
+		F12CADED18B858B500741468 /* MyQsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12CADEC18B858B500741468 /* MyQsViewController.m */; };
 		F171692418B30EBB009ED414 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F171692318B30EBB009ED414 /* LoginViewController.m */; };
 		F171692718B30F34009ED414 /* logInButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692618B30F34009ED414 /* logInButton.png */; };
 		F171692918B30F3D009ED414 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F171692818B30F3D009ED414 /* signUpButton.png */; };
@@ -86,6 +87,8 @@
 		F127DFE218B30A68005728D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F127DFE418B30A6E005728D7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F127DFE618B30A74005728D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F12CADEB18B858B500741468 /* MyQsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQsViewController.h; sourceTree = "<group>"; };
+		F12CADEC18B858B500741468 /* MyQsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQsViewController.m; sourceTree = "<group>"; };
 		F171692218B30EBB009ED414 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F171692318B30EBB009ED414 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F171692618B30F34009ED414 /* logInButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logInButton.png; path = "../../Hive-old/Hive/logInButton.png"; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				F127DFAC18B30973005728D7 /* AppDelegate.h */,
 				F127DFAD18B30973005728D7 /* AppDelegate.m */,
 				F127DFAF18B30973005728D7 /* Main.storyboard */,
+				F12CADEB18B858B500741468 /* MyQsViewController.h */,
+				F12CADEC18B858B500741468 /* MyQsViewController.m */,
 				F1B256FE18B810520094F1C1 /* AnswerViewController.h */,
 				F1B256FF18B810520094F1C1 /* AnswerViewController.m */,
 				F1B256F918B7F5A40094F1C1 /* LoadViewController.h */,
@@ -341,6 +346,7 @@
 			files = (
 				F171692418B30EBB009ED414 /* LoginViewController.m in Sources */,
 				F12222B518B4215D00403539 /* AskViewController.m in Sources */,
+				F12CADED18B858B500741468 /* MyQsViewController.m in Sources */,
 				F12222B218B3C8F300403539 /* EditProfileViewController.m in Sources */,
 				F127DFB418B30973005728D7 /* ProfileViewController.m in Sources */,
 				F127DFAE18B30973005728D7 /* AppDelegate.m in Sources */,

@@ -22,5 +22,6 @@
 -(IBAction)logout:(id)sender;
 -(IBAction)answer:(id)sender;
 -(IBAction)ask:(id)sender;
+-(IBAction)myQs:(id)sender;
 
 @end
